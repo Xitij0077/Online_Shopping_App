@@ -7,7 +7,7 @@ import {
   Room,
   Phone,
   MailOutline,
-} from "@material-ul/icons";
+} from "@material-ui/icons";
 import { mobile } from "../responsive";
 
 const Container = styled.div`

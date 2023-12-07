@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
-import { mobile, tablet } from "../responsive";
+import { mobile } from "../responsive";
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
