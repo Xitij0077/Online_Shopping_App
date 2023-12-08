@@ -72,7 +72,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Center>
-          <Logo>VogueVault.</Logo>
+          <Logo>VoguVault.</Logo>
         </Center>
         <Left>
           <Language>EN</Language>
