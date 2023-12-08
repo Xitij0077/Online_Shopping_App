@@ -19,6 +19,7 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  padding-left: 10rem;
 `;
 
 const Language = styled.span`
@@ -42,10 +43,11 @@ const Input = styled.input`
 
 const Center = styled.div`
   flex: 1;
-  text-align: center;
+  ${"" /* text-align: center; */}
 `;
 
 const Logo = styled.h1`
+  font-size: 1.3rem;
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
@@ -69,6 +71,9 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
+        <Center>
+          <Logo>VogueVault.</Logo>
+        </Center>
         <Left>
           <Language>EN</Language>
           <SearchContainer>
@@ -76,9 +81,7 @@ const Navbar = () => {
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
-        <Center>
-          <Logo>VogueVault.</Logo>
-        </Center>
+
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
