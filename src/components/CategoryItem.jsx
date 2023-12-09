@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
-  flex: 1;
+  flex: 2;
   margin: 3px;
   height: 70vh;
   position: relative;

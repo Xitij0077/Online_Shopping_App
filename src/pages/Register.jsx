@@ -2,15 +2,17 @@ import { styled } from "styled-components";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
-  width: 100vh;
+  max-width: 100vw;
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pixels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://images.pexels.com/photos/2221879/pexels-photo-2221879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
       center;
-  background-size: cover;
+  ${"" /* background-size: 100%; */}
+
+  background-size: 100% auto;
   display: flex;
   align-items: center;
   justify-content: center;

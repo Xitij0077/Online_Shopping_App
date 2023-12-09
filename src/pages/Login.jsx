@@ -2,15 +2,15 @@ import { styled } from "styled-components";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pixels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
       center;
-  background-size: cover;
+  background-size: 100% auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  width: 40%;
+  width: 30%;
   border: none;
   padding: 15px 20px;
   background-color: teal;
