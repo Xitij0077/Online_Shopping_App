@@ -6,7 +6,7 @@ import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
 
 const App = () => {
-  return <Product />;
+  return <ProductList />;
 };
 
 export default App;
