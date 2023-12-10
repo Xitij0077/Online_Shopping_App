@@ -12,13 +12,16 @@ const Wrapper = styled.div`
   display: flex;
   ${mobile({ padding: "10px", flexDirection: "column" })}
 `;
+
 const ImgContainer = styled.div`
   flex: 1;
 `;
 const Image = styled.img`
-  width: 100%;
-  height: 90vh;
-  object-fit: cover;
+  width: 85%;
+  height: 70vh;
+
+  object-fit: contain;
+  margin-left: 2rem;
   ${mobile({ height: "40vh" })}
 `;
 const InfoContainer = styled.div`
@@ -27,10 +30,11 @@ const InfoContainer = styled.div`
   ${mobile({ padding: "10px" })}
 `;
 const Title = styled.h1`
-  font-weight: 200;
+  font-weight: 295;
 `;
 const Desc = styled.p`
   margin: 20px 0px;
+  font-weight: 350;
 `;
 const Price = styled.span`
   font-weight: 100;
@@ -42,6 +46,7 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   ${mobile({ width: "100%" })}
 `;
 const Filter = styled.div`
@@ -51,6 +56,7 @@ const Filter = styled.div`
 const FilterTitle = styled.span`
   font-size: 20px;
   font-weight: 200;
+  ${"" /* margin-top: 10px; */}
 `;
 const FilterColor = styled.div`
   width: 20px;
@@ -62,15 +68,28 @@ const FilterColor = styled.div`
 `;
 const FilterSize = styled.select`
   margin-left: 10px;
+  ${"" /* margin-top: 10px; */}
   padding: 5px;
 `;
 const FilterSizeOption = styled.option``;
 const AddContainer = styled.div`
   width: 50%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  ${"" /* margin: 0px 5px; */}
+  ${"" /* align-items: center; */}
+  ${"" /* justify-content: space-between; */}
   ${mobile({ width: "100%" })}
+`;
+
+const StyledAdd = styled(Add)`
+  font-size: 18px !important; /* Add !important to override any conflicting styles */
+  cursor: pointer; /* Add cursor pointer for interactivity */
+`;
+
+const StyledRemove = styled(Remove)`
+  font-size: 18px !important; /* Add !important to override any conflicting styles */
+  cursor: pointer; /* Add cursor pointer for interactivity */
 `;
 const AmountContainer = styled.div`
   display: flex;
@@ -90,7 +109,8 @@ const Amount = styled.span`
 const Button = styled.button`
   padding: 15px;
   border: 2px solid teal;
-  background-color: white;
+  background-color: black;
+
   cursor: pointer;
   font-weight: 500;
   &:hover {
@@ -105,19 +125,22 @@ const Product = () => {
       <Announcement />
       <Wrapper>
         <ImgContainer>
-          <Image src="https://i.ibb.co/56qMxwr/jean.jpg" />
+          <Image src="/categories/product-3.png" />
         </ImgContainer>
         <InfoContainer>
-          <Title>Denim Jumpsuit</Title>
+          <Title>Denim Jeans</Title>
           <Desc>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             dolores illum iste vero suscipit sapiente porro recusandae soluta
             maxime? Recusandae quaerat reprehenderit quidem aliquam excepturi ex
             suscipit voluptate aspernatur eligendi?
           </Desc>
-          <Price>$20</Price>
+          <Price style={{ fontWeight: "200" }}>
+            {" "}
+            <b style={{ fontSize: "20px", fontWeight: "200" }}>Price:</b> $20
+          </Price>
           <FilterContainer>
-            <Filter>
+            <Filter style={{ marginBottom: "20px" }}>
               <FilterTitle>Color</FilterTitle>
               <FilterColor color="Black" />
               <FilterColor color="Blue" />
@@ -141,12 +164,14 @@ const Product = () => {
             </Filter>
           </FilterContainer>
           <AddContainer>
-            <AmountContainer>
-              <Remove />
+            <AmountContainer style={{ marginBottom: "2rem" }}>
+              <StyledRemove />
               <Amount>1</Amount>
-              <Add />
+              <StyledAdd />
             </AmountContainer>
-            <Button>ADD TO CART</Button>
+            <Button style={{ color: "white", fontSize: "0.90rem" }}>
+              ADD TO CART
+            </Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
