@@ -164,7 +164,7 @@ const Product = () => {
             </Filter>
           </FilterContainer>
           <AddContainer>
-            <AmountContainer style={{ marginBottom: "2rem" }}>
+            <AmountContainer style={{ marginBottom: "2.5rem" }}>
               <StyledRemove />
               <Amount>1</Amount>
               <StyledAdd />

@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 const Title = styled.h1`
   font-size: 55px;
-
+  font-weight: 300;
   margin-bottom: 20px;
 `;
 const Desc = styled.div`
@@ -22,7 +22,7 @@ const Desc = styled.div`
   ${mobile({ textAlign: "center" })}
 `;
 const InputContainer = styled.div`
-  width: 50%;
+  width: 20%;
   height: 40px;
   background-color: white;
   display: flex;
@@ -50,7 +50,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          <Send />
+          <Send style={{ marginTop: "5px" }} />
         </Button>
       </InputContainer>
     </Container>
