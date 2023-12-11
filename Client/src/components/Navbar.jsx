@@ -6,6 +6,7 @@ import { mobile } from "../responsive";
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
+  background-color:#f5feff;
 `;
 
 const Wrapper = styled.div`
@@ -29,16 +30,45 @@ const Language = styled.span`
 `;
 
 const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
+  ${
+    "" /* border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
   margin-left: 25px;
-  padding: 5px;
+  padding: 5px; */
+  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 `;
 
 const Input = styled.input`
+  ${
+    "" /* border: none;
+
+  ${mobile({ width: "50px" })} */
+  }
   border: none;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  width: 250px;
+  transition: width 0.3s ease-in-out;
+
   ${mobile({ width: "50px" })}
+
+  ${
+    "" /* &:focus {
+    width: 250px; /* Adjust the width as needed */
+  } */}
+`;
+
+const SearchIcon = styled(Search)`
+  color: gray;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
 `;
 
 const Center = styled.div`
@@ -78,7 +108,7 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />{" "}
-            <Search style={{ color: "gray", fontSize: 16 }} />
+            <SearchIcon style={{ fontSize: 16 }} />
           </SearchContainer>
         </Left>
 
