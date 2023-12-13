@@ -1,17 +1,18 @@
 .navbar {
-  height: 80px;
+  height: 55px;
 
   .wrapper {
-    padding: 14px 30px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     // background-color: #fcfeff;
+    margin-bottom: 0;
     .item {
       display: flex;
       align-items: center;
       font-size: 14px;
-      font-weight: 600;
+      // font-weight: 600;
       color: #000000;
       // font-family: "Open Sans", sans-serif;
       // font-family: "Roboto", sans-serif;
@@ -27,8 +28,8 @@
 
     .center {
       font-size: 25px;
-      letter-spacing: 3px;
-      font-weight: bolder;
+      letter-spacing: 2px;
+      // font-weight: bolder;
       // font-family: "Afacad", sans-serif;
       /* font-family: "Alex Brush", cursive; */
       /* font-family: "Dancing Script", cursive; */
