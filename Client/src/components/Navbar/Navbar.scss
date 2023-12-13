@@ -6,13 +6,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: #f7fdff;
+    // background-color: #fcfeff;
     .item {
       display: flex;
       align-items: center;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
-      color: #3e3e3e;
+      color: #000000;
+      // font-family: "Open Sans", sans-serif;
+      // font-family: "Roboto", sans-serif;
+      font-family: "Hedvig Letters Sans", sans-serif;
     }
 
     .left {
@@ -23,10 +26,24 @@
     }
 
     .center {
-      font-size: 23px;
+      font-size: 25px;
       letter-spacing: 3px;
       font-weight: bolder;
       // font-family: "Afacad", sans-serif;
+      /* font-family: "Alex Brush", cursive; */
+      /* font-family: "Dancing Script", cursive; */
+      /* font-family: "Great Vibes", cursive; */
+      /* font-family: "Montserrat", sans-serif; */
+      // font-family: "Open Sans", sans-serif;
+      // font-family: "Poppins", sans-serif;
+      // font-family: "Roboto", sans-serif;
+      // font-family: "Urbanist", sans-serif;
+      // font-family: "Montserrat", sans-serif;
+      /* font-family: "Open Sans", sans-serif; */
+      font-family: "Afacad", sans-serif;
+      // font-family: "Hedvig Letters Sans", sans-serif;
+      /* font-family: "Roboto", sans-serif; */
+      // font-family: "Roboto Serif", serif;
     }
     .right {
       display: flex;
