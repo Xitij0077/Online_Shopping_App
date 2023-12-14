@@ -1,0 +1,64 @@
+.card {
+  width: 242px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Hedvig Letters Sans", sans-serif;
+
+  .image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    // gap: 10px;
+
+    &:hover {
+      .secondImg {
+        z-index: 2;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+      position: absolute;
+    }
+    .mainImg {
+      z-index: 1;
+    }
+    span {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: white;
+      color: rgb(41, 155, 159);
+      padding: 3px 5px;
+      z-index: 3;
+      font-size: 11px;
+      font-weight: 500;
+      align-items: center;
+      border-radius: 5px;
+    }
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0 5px 0;
+  }
+
+  .prices {
+    display: flex;
+    gap: 20px;
+
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      &:first-child {
+        color: gray;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

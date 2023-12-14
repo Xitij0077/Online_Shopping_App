@@ -49,12 +49,13 @@
 
 .slider {
   height: calc(100vh - 70px);
-  width: 100%;
+  width: 100vw;
   position: relative;
+  overflow: hidden;
 
   .container {
     width: fit-content;
-    height: 100%;
+    height: 100vh;
     display: flex;
     transition: all 1s ease;
 
@@ -105,11 +106,11 @@
     margin: auto;
 
     .icon {
-      width: 55px;
+      width: 50px;
       font-size: 2rem;
-      color: black;
+      color: rgb(0, 0, 0);
       height: 50px;
-      border: 1.5px solid #474747;
+      border: 2px solid #313131;
       display: flex;
       border-radius: 10%;
       align-items: center;
