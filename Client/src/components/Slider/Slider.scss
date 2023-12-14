@@ -48,12 +48,12 @@
 // }
 
 .slider {
-  height: calc(100vh - 75px);
-  width: 100vw;
+  height: calc(100vh - 70px);
+  width: 100%;
   position: relative;
 
   .container {
-    width: 400vw;
+    width: fit-content;
     height: 100%;
     display: flex;
     transition: all 1s ease;

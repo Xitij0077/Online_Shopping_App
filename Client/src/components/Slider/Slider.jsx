@@ -58,7 +58,7 @@ const Slider = () => {
     },
     {
       image: "../../../public/img/Slide-1.jpg",
-      text: "Elevate Your Style, Save!",
+      text: "Unlock Value with Our Exclusive Promotions.",
     },
     {
       image: "../../../public/img/Slide-4.jpg",
