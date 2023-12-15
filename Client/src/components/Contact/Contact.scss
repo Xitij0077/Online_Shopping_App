@@ -1,0 +1,71 @@
+.contact {
+  background: linear-gradient(
+    45deg,
+    #ff6347,
+    #eace2a,
+    #2ecc71,
+    #6495ed,
+    #9b59b6,
+    #800080
+  );
+  animation: gradient 25s ease infinite;
+  color: white;
+  padding: 20px;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  // margin-right: 20px;
+  background-size: 400% 400%;
+  .wrapper {
+    width: 50%;
+    display: flex;
+    // margin-right: 15px;
+    align-items: center;
+    justify-content: space-between;
+    // animation: changeColor 100s infinite alternate;
+
+    span {
+      font-weight: 550;
+      // font-family: "Open Sans", sans-serif;
+      font-family: "Quicksand", sans-serif;
+      // font-size: 20px;
+      // padding-right: 5px;
+      margin-right: 25px;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      font-family: "Quicksand", sans-serif;
+      // margin: 1px 0px;
+    }
+
+    button {
+      // margin-left: 25px;
+      padding: 10px;
+      color: white;
+      background: #333;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      font-family: "Quicksand", sans-serif;
+    }
+
+    .icon {
+      margin-left: 25px;
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
