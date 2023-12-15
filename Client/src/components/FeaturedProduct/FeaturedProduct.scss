@@ -1,5 +1,7 @@
 .featuredProducts {
   margin: 100px 200px;
+  font-weight: bold;
+
   .top {
     // display: flex;
     // flex-direction: column;
@@ -10,12 +12,19 @@
     h1 {
       flex: 2;
       text-transform: capitalize;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
+      font-family: "Afacad", sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 0.9px solid #aaacac; /* Add an underline style */
+      padding-bottom: 10px; /* Adjust as needed */
     }
 
     p {
       flex: 3;
       color: gray;
+      font-family: "Afacad", sans-serif;
+      font-size: 1.1rem;
+      // margin-top: 15px;
     }
   }
 
@@ -37,3 +46,76 @@
     }
   }
 }
+
+// ========================================================================================================
+
+// .featuredProducts {
+//   margin: 100px 200px;
+//   font-weight: bold;
+
+//   .top {
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-bottom: 50px;
+
+//     h1 {
+//       flex: 2;
+//       text-transform: capitalize;
+//       margin-bottom: 50px;
+//       font-family: "Afacad", sans-serif;
+//       text-align: center;
+//       font-size: 1.8rem;
+//       position: relative; /* Add relative positioning */
+//       display: inline-block; /* Make it inline-block to apply styles to inline content */
+//     }
+
+//     h1::after {
+//       content: ""; /* Add an empty content for the pseudo-element */
+//       display: block; /* Make it a block element */
+//       height: 2px; /* Set the height of the underline */
+//       width: 100%; /* Make it stretch the full width of the h1 */
+//       background-color: #969696; /* Set the color of the underline */
+//       position: absolute; /* Position it absolutely within the h1 */
+//       bottom: -20px; /* Position it at the bottom of the h1 */
+//       left: 0px; /* Align it to the left of the h1 */
+//     }
+
+//     p {
+//       flex: 3;
+//       color: rgb(115, 115, 115);
+//       font-family: "Afacad", sans-serif;
+//       font-size: 1.1rem;
+//     }
+//   }
+
+//   .bottom {
+//     display: flex;
+//     justify-content: center;
+//     gap: 50px;
+
+//     h1 {
+//       flex: 2;
+//       text-transform: capitalize;
+//       position: relative;
+//       display: inline-block;
+//     }
+
+//     h1::after {
+//       content: "";
+//       display: block;
+//       height: 2px;
+//       width: 100%;
+//       background-color: #000;
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//     }
+
+//     p {
+//       flex: 3;
+//       color: gray;
+//     }
+//   }
+// }
+
+// // ==============================================================================================
