@@ -1,2 +1,39 @@
-.product {
+.products {
+  padding: 30px 50px;
+  display: flex;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: 0.87rem;
+  .left {
+    flex: 1;
+    position: sticky;
+    height: 100%;
+    top: 50px;
+
+    .filterItem {
+      margin-bottom: 30px;
+
+      h2 {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+
+      .inputItem {
+        margin-bottom: 10px;
+        label {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 3;
+    .catImg {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      margin-bottom: 50px;
+      border-radius: 4px;
+    }
+  }
 }

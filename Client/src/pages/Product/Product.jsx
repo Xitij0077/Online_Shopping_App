@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.scss";
+
 const Product = () => {
-  return <div className="product">Product</div>;
+  const [selectedImg, setSelectedImg] = useState(0);
+  const images = [
+    "https://images.pexels.com/photos/2755612/pexels-photo-2755612.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  ];
+
+  return (
+    <div className="product">
+      <div className="left">
+        <div className="images">
+          <img src={images[0]} alt="" onClick={(e) => setSelectedImg(0)} />
+          <img src={images[1]} alt="" onClick={(e) => setSelectedImg(1)} />
+        </div>
+
+        <div className="mainImg">
+          <img src={images[selectedImg]} alt="" />
+        </div>
+      </div>
+      <div className="right"></div>
+    </div>
+  );
 };
 
 export default Product;
