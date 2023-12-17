@@ -1,3 +1,104 @@
-.cart{
+.cart {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  z-index: 999;
+  background-color: rgb(255, 252, 252);
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.5);
+  // font-family: "Noto Sans", sans-serif;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  border-radius: 5px;
 
+  h1 {
+    margin-bottom: 20px;
+    color: #2879fe;
+
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .item {
+    // width: 20;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+    margin-bottom: 8px;
+    border: 1px solid #dfdfdf;
+    padding: 5.5px 5.5px;
+    border-radius: 5px;
+
+    img {
+      width: 80px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .details {
+      h1 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #474848;
+      }
+
+      p {
+        color: gray;
+        margin-bottom: 12px;
+        margin-top: -12px;
+        font-size: 12.5px;
+      }
+
+      .price {
+        color: #2879fe;
+        font-size: 0.9rem;
+      }
+    }
+
+    .delete {
+      color: red;
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.95px;
+    // font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+
+    margin-top: 25px;
+    color: rgb(56, 192, 81);
+  }
+
+  button {
+    width: 170px;
+    height: 40px;
+    letter-spacing: 0.9px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hedvig Letters Sans", sans-serif;
+    border-radius: 5px;
+    gap: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    border: none;
+    background-color: #2879fe;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  .reset {
+    color: red;
+    font-size: 12.5px;
+    cursor: pointer;
+  }
 }
