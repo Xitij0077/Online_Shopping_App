@@ -4,13 +4,18 @@
   gap: 50px;
   font-family: "Hedvig Letters Sans", sans-serif;
   margin-top: 15px;
-
+  // height: 100%;
   .left {
     flex: 1;
     display: flex;
+    position: sticky;
     gap: 20px;
+    position: -webkit-sticky;
+    top: 0;
+    height: fit-content; /* Adjust the height as needed */
+
     .images {
-      flex: 1;
+      flex: 1.1;
 
       img {
         width: 100%;
@@ -27,7 +32,7 @@
 
       img {
         width: 100%;
-        max-height: 600px;
+        max-height: 575px;
         object-fit: cover;
         border-radius: 8px;
       }
@@ -44,18 +49,22 @@
     font-family: "Hedvig Letters Sans", sans-serif;
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      color: #414141;
     }
     .price {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #2879fe;
-      font-weight: bold;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: "Roboto", sans-serif;
     }
 
     p {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 300;
       text-align: justify;
+      font-family: "Hedvig Letters Sans", sans-serif;
     }
 
     .quantity {
@@ -63,7 +72,7 @@
       align-items: center;
       gap: 10px;
       // border: 1px solid #999;
-      width: 25%;
+      width: 25.5%;
       height: 35px;
       text-align: center;
       padding: 6px 0px;
@@ -73,7 +82,7 @@
         border-radius: 50px;
         // border: 1px solid #999;
         height: 35px;
-        border: 1px solid #d4d4d4;
+        border: 1px solid #2879fe;
         align-items: center;
 
         // text-align: center;
@@ -106,7 +115,7 @@
       margin-top: 5px;
       width: 170px;
       padding: 10px 5px 10px 5px;
-      background-color: #ff9800;
+      background-color: #2879fe;
       color: white;
       display: flex;
       align-items: center;
@@ -124,22 +133,38 @@
 
     .links {
       display: flex;
-      gap: 25px;
+      gap: 15px;
 
       .item {
         display: flex;
         margin-top: 10px;
         align-items: center;
-        gap: 5px;
+        gap: 4px;
         color: white;
-        background-color: #2879fe;
-        font-size: 0.65rem;
+        background-color: #9c9797;
+        font-size: 0.7rem;
         letter-spacing: 0.5px;
         // font-weight: 700;
         border-radius: 5px;
-        height: 22px;
+        height: 23px;
 
-        padding: 7px 9px;
+        padding: 7px 10px;
+      }
+
+      .item1 {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        gap: 4px;
+        color: white;
+        background-color: #ff3a3a;
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+        // font-weight: 700;
+        border-radius: 5px;
+        height: 23px;
+
+        padding: 7px 10px;
       }
     }
 

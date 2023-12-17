@@ -54,7 +54,7 @@ const Product = () => {
           ADD TO CART
         </button>
         <div className="links">
-          <div className="item">
+          <div className="item1">
             <FavoriteBorderIcon />
             Add To Wishlist
           </div>
