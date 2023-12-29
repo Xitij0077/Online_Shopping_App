@@ -7,18 +7,18 @@ const authRoute = require("./routes/auth");
 const productRoute = require("./routes/product");
 const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
-const stripeRoute = require("./routes/stripe");
+// const stripeRoute = require("./routes/stripe");
 const cors = require("cors");
 
 dotenv.config();
 
 const connectDB = () => {
-  try {
-    mongoose.connect(process.env.MONGO_URL);
-    console.log("Database Connected Successfully");
-  } catch (error) {
-    console.log("Database Connection Failed");
-  }
+	try {
+		mongoose.connect(process.env.MONGO_URL);
+		console.log("Database Connected Successfully");
+	} catch (error) {
+		console.log("Database Connection Failed");
+	}
 };
 
 app.use(cors());
@@ -28,10 +28,10 @@ app.use("/api/auth", authRoute);
 app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
-app.use("/api/checkout", stripeRoute);
+// app.use("/api/checkout", stripeRoute);
 
 const PORT = 4000;
 app.listen(process.env.PORT || 5000, async () => {
-  await connectDB();
-  console.log("API listening on PORT:", PORT);
+	await connectDB();
+	console.log("API listening on PORT:", PORT);
 });
